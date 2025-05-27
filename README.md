@@ -49,3 +49,31 @@
 6. **Conclusión**
 
     Este análisis puede contribuir a una política pública más eficaz, orientada a cerrar la brecha energética. Aplicar machine learning en este contexto no solo permite priorizar recursos, sino también anticipar necesidades futuras.
+
+## Uso del proyecto
+
+1. Creación del entorno virtual con el comando
+
+    ```bash
+    python3 -m venv .venv
+    ```
+
+2. Activar el entorno virtualS
+
+    Para linux:
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+    Para windows:
+
+    ```powershell
+    .venv\Scripts\activate
+    ```
+
+3. Instalación de dependencias del archivo requirements.txt
+
+    ```bash
+    pip install -r requirements.txt
+    ```
