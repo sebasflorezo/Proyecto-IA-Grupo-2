@@ -1,0 +1,12 @@
+[project]
+name = "proyecto-ia-grupo-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "pandas>=2.2.3",
+    "pip>=25.1.1",
+]
