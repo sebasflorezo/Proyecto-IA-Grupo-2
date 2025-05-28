@@ -49,6 +49,92 @@
 6. **Conclusión**
 
     Este análisis puede contribuir a una política pública más eficaz, orientada a cerrar la brecha energética. Aplicar machine learning en este contexto no solo permite priorizar recursos, sino también anticipar necesidades futuras.
+ 
+# 📊 Análisis Estadístico del Dataset de Energía en Zonas No Interconectadas (ZNI)
+
+Este documento presenta un resumen y análisis estadístico del dataset `Energia_en_ZNI.csv`, el cual contiene información detallada sobre el consumo energético en las Zonas No Interconectadas de Colombia.
+
+---
+
+## 📁 Descripción General del Dataset
+
+- **Registros:** 4591
+- **Columnas:** 14
+- **Período de tiempo:** Años entre 2020 y 2024
+- **Cobertura geográfica:** 19 departamentos, 53 municipios, 153 localidades
+
+---
+
+## 🔢 Variables Numéricas Principales
+
+### 1. `ENERGÍA ACTIVA` (kWh)
+- **Media:** 362,813
+- **Mediana:** 13,365
+- **Máximo:** 18,597,790
+- **Mínimo:** 0
+- **Observaciones:** Altamente sesgada a la derecha, con presencia de **outliers extremos**. Muchas localidades presentan valores bajos, mientras que unas pocas concentran grandes consumos.
+
+---
+
+### 2. `ENERGÍA REACTIVA` (kVARh)
+- **Media:** 107,721
+- **Mediana:** 4,962
+- **Máximo:** 5,435,213
+- **Mínimo:** 0
+- **Observaciones:** Patrón similar al de la energía activa, también con alta dispersión y presencia de outliers.
+
+---
+
+### 3. `POTENCIA MÁXIMA` (kW)
+- **Media:** 1,838
+- **Mediana:** 75.9
+- **Máximo:** 2,694,319
+- **Mínimo:** 0
+- **Observaciones:** Claramente afectada por **valores atípicos muy altos** que influyen en la media.
+
+---
+
+### 4. `PROMEDIO DIARIO EN HORAS` (h)
+- **Media:** 12.06
+- **Mediana:** 8.59
+- **Máximo:** 24
+- **Mínimo:** 0
+- **Observaciones:** Indicador clave para evaluar la **calidad del servicio energético**. Gran variación entre localidades: algunas con servicio continuo, otras con menos de 12h por día.
+
+---
+
+## 🗓️ Variables Temporales
+
+### `AÑO SERVICIO`
+- Años registrados: 2020 a 2024
+- Distribución relativamente equilibrada, útil para análisis evolutivo.
+
+### `MES SERVICIO`
+- Rango: 1 a 12
+- Representa el mes de servicio. Permite analizar estacionalidad.
+
+---
+
+## 🌍 Variables Geográficas
+
+- `DEPARTAMENTO`: 26 nombres únicos (algunos departamentos tienen múltiples ID distintos).
+- `ID MUNICIPIO`: 53 únicos
+- `LOCALIDAD`: 327 nombres únicos
+
+Estas columnas son útiles para hacer segmentaciones geográficas y mapas.
+
+---
+
+## 🧭 Valores Unicos por Columna
+
+```text
+ENERGÍA ACTIVA              4272 valores únicos
+ENERGÍA REACTIVA            3990 valores únicos
+POTENCIA MÁXIMA             3370 valores únicos
+PROMEDIO DIARIO EN HORAS    1288 valores únicos
+DÍA DE DEMANDA MÁXIMA         16 valores únicos
+FECHA DE DEMANDA MÁXIMA     4154 fechas distintas
+
 
 ## Uso del proyecto
 
@@ -75,5 +161,5 @@
 3. Instalación de dependencias del archivo requirements.txt
 
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirements.txt 
     ```
