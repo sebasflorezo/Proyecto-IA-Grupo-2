@@ -134,7 +134,37 @@ POTENCIA MÁXIMA             3370 valores únicos
 PROMEDIO DIARIO EN HORAS    1288 valores únicos
 DÍA DE DEMANDA MÁXIMA         16 valores únicos
 FECHA DE DEMANDA MÁXIMA     4154 fechas distintas
-```
+
+## 📊 Análisis Estadístico – Interpretación
+
+Este proyecto aborda la problemática del acceso desigual a la energía eléctrica en las Zonas No Interconectadas (ZNI) de Colombia. A través del análisis de datos técnicos recopilados entre 2020 y 2024, se busca identificar los factores que determinan la calidad del servicio energético en estas regiones y evidenciar patrones de exclusión estructural.
+
+### 🔍 Variables clave analizadas
+
+- **🔌 PROMEDIO DIARIO EN HORAS** (Variable objetivo):
+  - **Media:** 11.94 h  
+  - **Mediana:** 8.59 h  
+  - **Rango:** de 0 a 24 h  
+  - ➤ Más del 50% de las localidades tienen acceso parcial al servicio (menos de 12 h diarias), y algunas no reciben energía en absoluto. Este indicador refleja la magnitud de la exclusión energética.
+
+- **⚡ ENERGÍA ACTIVA (kWh):**
+  - **Media:** 369,317 | **Mediana:** 12,310 | **Máximo:** 20,620,920  
+  - ➤ Se observa una distribución altamente desigual del consumo eléctrico. Muchas localidades tienen niveles cercanos a cero, lo que evidencia fallas de acceso, mientras unas pocas concentran gran parte del consumo.
+
+- **🏗️ POTENCIA MÁXIMA (kW):**
+  - **Media:** 715 | **Mediana:** 64.8 | **Máximo:** 34,290  
+  - ➤ La capacidad instalada varía drásticamente entre localidades. Algunas apenas alcanzan la potencia necesaria para alumbrado básico, mientras otras tienen infraestructura energética significativamente mayor.
+
+- **🔁 ENERGÍA REACTIVA (kVARh):**
+  - Comportamiento similar al de la energía activa, con valores extremos que reflejan posibles ineficiencias en el uso de la red eléctrica o una infraestructura mal optimizada.
+
+### 📌 Conclusión
+
+El análisis estadístico permite evidenciar una **realidad energética profundamente desigual** en las ZNI. La carencia de infraestructura adecuada y el bajo consumo en la mayoría de las localidades son indicadores claros de exclusión. A partir de estas variables técnicas, se plantea la construcción de un modelo de aprendizaje supervisado (regresión) que permita **predecir el número promedio de horas de energía diaria por localidad**.
+
+Esta herramienta busca apoyar la toma de decisiones en políticas públicas, priorizar inversiones y simular mejoras en escenarios de intervención. En última instancia, este trabajo contribuye a promover una **transición energética justa, equitativa y basada en evidencia** para las comunidades más vulnerables del país.
+
+
 
 ## Uso del proyecto
 
