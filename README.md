@@ -135,6 +135,7 @@ PROMEDIO DIARIO EN HORAS    1288 valores únicos
 DÍA DE DEMANDA MÁXIMA         16 valores únicos
 FECHA DE DEMANDA MÁXIMA     4154 fechas distintas
 
+---
 
 ## 📊 Análisis Estadístico Con Datos Organizados y Corregidos – Interpretación
 
