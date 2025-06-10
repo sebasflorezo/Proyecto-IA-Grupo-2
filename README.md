@@ -127,13 +127,14 @@ Estas columnas son útiles para hacer segmentaciones geográficas y mapas.
 
 ## 🧭 Valores Unicos por Columna
 
-```text
+
 ENERGÍA ACTIVA              4272 valores únicos
 ENERGÍA REACTIVA            3990 valores únicos
 POTENCIA MÁXIMA             3370 valores únicos
 PROMEDIO DIARIO EN HORAS    1288 valores únicos
 DÍA DE DEMANDA MÁXIMA         16 valores únicos
 FECHA DE DEMANDA MÁXIMA     4154 fechas distintas
+
 
 ## 📊 Análisis Estadístico – Interpretación
 
@@ -164,8 +165,6 @@ El análisis estadístico permite evidenciar una **realidad energética profunda
 
 Esta herramienta busca apoyar la toma de decisiones en políticas públicas, priorizar inversiones y simular mejoras en escenarios de intervención. En última instancia, este trabajo contribuye a promover una **transición energética justa, equitativa y basada en evidencia** para las comunidades más vulnerables del país.
 
-
-
 ## Uso del proyecto
 
 1. Creación del entorno virtual con el comando
@@ -192,4 +191,3 @@ Esta herramienta busca apoyar la toma de decisiones en políticas públicas, pri
 
     ```bash
     pip install -r requirements.txt 
-    ```
