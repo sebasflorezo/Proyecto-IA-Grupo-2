@@ -134,6 +134,7 @@ POTENCIA MÁXIMA             3370 valores únicos
 PROMEDIO DIARIO EN HORAS    1288 valores únicos
 DÍA DE DEMANDA MÁXIMA         16 valores únicos
 FECHA DE DEMANDA MÁXIMA     4154 fechas distintas
+<<<<<<< HEAD
 
 ---
 
@@ -166,6 +167,9 @@ El análisis estadístico permite evidenciar una **realidad energética profunda
 
 Esta herramienta busca apoyar la toma de decisiones en políticas públicas, priorizar inversiones y simular mejoras en escenarios de intervención. En última instancia, este trabajo contribuye a promover una **transición energética justa, equitativa y basada en evidencia** para las comunidades más vulnerables del país.
 
+=======
+```
+>>>>>>> main
 
 ## Uso del proyecto
 
