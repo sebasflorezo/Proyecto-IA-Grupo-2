@@ -166,6 +166,34 @@ El análisis estadístico permite evidenciar una **realidad energética profunda
 
 Esta herramienta busca apoyar la toma de decisiones en políticas públicas, priorizar inversiones y simular mejoras en escenarios de intervención. En última instancia, este trabajo contribuye a promover una **transición energética justa, equitativa y basada en evidencia** para las comunidades más vulnerables del país.
 
+# 📊 Análisis Comparativo de Modelos de IA
+
+Este proyecto implementó diferentes modelos de aprendizaje supervisado para analizar el acceso desigual a la energía eléctrica en las Zonas No Interconectadas (ZNI) de Colombia, a partir de variables técnicas como energía activa, energía reactiva y potencia máxima.
+
+### 📌 Modelos evaluados
+
+| Modelo                   | Tipo         | MAE (↓) | RMSE (↓) | R² (↑) | Accuracy (↑) | Comentario                                                                 |
+|--------------------------|--------------|---------|----------|--------|---------------|---------------------------------------------------------------------------|
+| Regresión Lineal         | Regresión    | 6.06 h  | 17.62 h  | 0.03   | —             | Bajo desempeño, no capta relaciones no lineales.                         |
+| Random Forest Regressor  | Regresión    | 5.87 h  | 14.87 h  | 0.04   | —             | Ligera mejora, pero aún limitado sin más variables.                      |
+| Árbol de Decisión        | Regresión    | **1.06 h** | **2.33 h** | **0.90** | —         | Excelente ajuste, útil para simulaciones técnicas.                       |
+| Regresión Logística      | Clasificación| —       | —        | —      | **88.7%**      | Ideal para clasificar acceso suficiente (≥12h). Recall del 99% en zonas críticas. |
+
+
+# ✅ Conclusiones del Proyecto
+Los modelos de regresión lineal y random forest tuvieron un rendimiento limitado. Sus bajos valores de R² indican que las variables disponibles por sí solas no explican suficientemente el acceso energético.
+
+El modelo de árbol de decisión sobresalió al alcanzar un R² de 0.90, permitiendo estimar con gran precisión las horas de energía diaria. Es ideal para simular mejoras en infraestructura energética.
+
+Al reformular el problema como clasificación (≥12h vs. <12h), la regresión logística alcanzó un accuracy del 88.7% y un recall del 99% en zonas críticas, convirtiéndose en una herramienta eficaz para priorizar intervenciones en territorios con acceso deficiente.
+
+# 🧠 Conclusión General
+El uso de inteligencia artificial permitió detectar patrones de exclusión energética, predecir escenarios de cobertura y priorizar zonas con necesidades urgentes. Si bien los modelos regresivos ayudan a cuantificar mejoras técnicas, los modelos clasificadores como la regresión logística son clave para la toma de decisiones territorial basada en datos.
+
+Este enfoque respalda el objetivo de promover una transición energética justa en Colombia, centrada en equidad, sostenibilidad y evidencia técnica.
+
+
+
 ## Uso del proyecto
 
 1. Creación del entorno virtual con el comando
