@@ -172,20 +172,22 @@ Este proyecto implementó diferentes modelos de aprendizaje supervisado para ana
 
 ### 📌 Modelos evaluados
 
-| Modelo                   | Tipo         | MAE (↓) | RMSE (↓) | R² (↑) | Accuracy (↑) | Comentario                                                                 |
-|--------------------------|--------------|---------|----------|--------|---------------|---------------------------------------------------------------------------|
-| Regresión Lineal         | Regresión    | 6.06 h  | 17.62 h  | 0.03   | —             | Bajo desempeño, no capta relaciones no lineales.                         |
-| Random Forest Regressor  | Regresión    | 5.87 h  | 14.87 h  | 0.04   | —             | Ligera mejora, pero aún limitado sin más variables.                      |
-| Árbol de Decisión        | Regresión    | **1.06 h** | **2.33 h** | **0.90** | —         | Excelente ajuste, útil para simulaciones técnicas.                       |
-| Regresión Logística      | Clasificación| —       | —        | —      | **88.7%**      | Ideal para clasificar acceso suficiente (≥12h). Recall del 99% en zonas críticas. |
-
+| Modelo                   | Tipo         | MAE (↓) | RMSE (↓) | R² (↑)  | Accuracy (↑) | Comentario                                                                      |
+|--------------------------|--------------|---------|----------|--------|--------------|----------------------------------------------------------------------------------|
+| **Regresión Lineal**         | Regresión    | 5.58 h  | 6.62 h   | 0.19   | —            | Bajo desempeño: explica solo el 19% de la varianza y comete errores de ~5.6 h.   |
+| **Random Forest Regressor**  | Regresión    | 0.87 h  | 1.94 h   | 0.93   | —            | Mejor ajuste: explica el 93% de la varianza y errores promedio inferiores a 1 h. |
+| **Árbol de Decisión**        | Regresión    | 1.06 h  | 2.33 h   | 0.90   | —            | Muy buen rendimiento, útil para simulaciones técnicas con baja complejidad.       |
+| **Regresión Logística**      | Clasificación| —       | —        | —      | 88.68%       | Alta precisión general, recall del 99% en la clase “deficiente” (0) y 69% en “suficiente” (1). |
 
 # ✅ Conclusiones del Proyecto
-Los modelos de regresión lineal y random forest tuvieron un rendimiento limitado. Sus bajos valores de R² indican que las variables disponibles por sí solas no explican suficientemente el acceso energético.
+- **Modelos de regresión:**  
+  - La Regresión Lineal presenta un rendimiento limitado (R² = 0.19).  
+  - El Random Forest Regressor es el más preciso para cuantificar horas de energía (MAE = 0.87 h, R² = 0.93).  
+  - El Árbol de Decisión ofrece un balance entre precisión (R² = 0.90) y simplicidad.
 
-El modelo de árbol de decisión sobresalió al alcanzar un R² de 0.90, permitiendo estimar con gran precisión las horas de energía diaria. Es ideal para simular mejoras en infraestructura energética.
-
-Al reformular el problema como clasificación (≥12h vs. <12h), la regresión logística alcanzó un accuracy del 88.7% y un recall del 99% en zonas críticas, convirtiéndose en una herramienta eficaz para priorizar intervenciones en territorios con acceso deficiente.
+- **Modelo de clasificación:**  
+  - La Regresión Logística, con un umbral de cobertura (≥12 h vs. <12 h), alcanzó una precisión del 88.68%.  
+  - Muestra un recall del 99% para la clase deficiente (0) y del 69% para la clase suficiente (1).
 
 # 🧠 Conclusión General
 El uso de inteligencia artificial permitió detectar patrones de exclusión energética, predecir escenarios de cobertura y priorizar zonas con necesidades urgentes. Si bien los modelos regresivos ayudan a cuantificar mejoras técnicas, los modelos clasificadores como la regresión logística son clave para la toma de decisiones territorial basada en datos.
