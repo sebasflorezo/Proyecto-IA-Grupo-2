@@ -180,6 +180,7 @@ Este proyecto implementó diferentes modelos de aprendizaje supervisado para ana
 | **Regresión Logística**      | Clasificación| —       | —        | —      | 88.68%       | Alta precisión general, recall del 99% en la clase “deficiente” (0) y 69% en “suficiente” (1). |
 
 # ✅ Conclusiones del Proyecto
+
 - **Modelos de regresión:**  
   - La Regresión Lineal presenta un rendimiento limitado (R² = 0.19).  
   - El Random Forest Regressor es el más preciso para cuantificar horas de energía (MAE = 0.87 h, R² = 0.93).  
@@ -194,7 +195,30 @@ El uso de inteligencia artificial permitió detectar patrones de exclusión ener
 
 Este enfoque respalda el objetivo de promover una transición energética justa en Colombia, centrada en equidad, sostenibilidad y evidencia técnica.
 
+## 🧠 Análisis Complementario del Modelo
 
+### 📊 Predicción de Localidades con Menor Acceso a Electricidad
+
+La siguiente visualización muestra las localidades con menor número promedio de horas de servicio eléctrico según el modelo entrenado:
+
+![Localidades con menor servicio eléctrico](output1.png)
+
+
+El gráfico presentado resalta las localidades con menor cantidad de horas promedio de suministro eléctrico, según las predicciones del modelo Random Forest entrenado.
+
+Se identifican zonas críticas donde la predicción del servicio eléctrico no supera las 4 horas diarias, siendo algunas incluso menores a 1 hora.
+
+La mayoría de estas localidades están ubicadas en los departamentos de Chocó, Nariño y Cauca, históricamente afectados por limitaciones en infraestructura energética.
+
+Estas predicciones reflejan una distribución desigual del servicio, lo que sugiere que las condiciones técnicas actuales en estas regiones están relacionadas directamente con la precariedad del servicio.
+
+Además:
+
+La gráfica permite visualizar patrones geográficos de exclusión energética, lo cual puede ser útil tanto para planeación territorial como para propuestas de inversión en infraestructura eléctrica.
+
+Este tipo de visualización cobra especial importancia para proyectos de políticas públicas orientadas al cierre de brechas en zonas no interconectadas.
+
+Esta representación gráfica no solo cuantifica el problema, sino que también facilita la priorización de zonas para intervenir desde lo técnico, lo social y lo institucional.
 
 ## Uso del proyecto
 
